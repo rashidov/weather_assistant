@@ -80,6 +80,5 @@ export function showModalInfoLocation(location, content) {
     dispatch(shwoModal())
     dispatch({ type: FLAG_GET })
     dispatch({ type: MODAL_CONTENT, payload: content })
-    dispatch(hideLoader())
   }
 }
