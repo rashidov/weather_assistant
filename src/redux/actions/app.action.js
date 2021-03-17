@@ -31,7 +31,7 @@ export function hideModal() {
 export function initialApp() {
   return async dispatch => {
     dispatch(showLoader())
-    const url = 'https://api.openweathermap.org/data/2.5/weather?lat=52.5244&lon=13.4105&units=metric&lang=ru&appid=f868ec53691a5a8ae1f3d0b5b18ce84e'
+    const url = 'https://api.openweathermap.org/data/2.5/weather?lat=52.5244&lon=13.4105&units=metric&lang=ru&appid={Api TOKEN}'
     const result = await fetch(url).then( response => { return response.json()})
     dispatch({ type: INIT, payload: result })
     dispatch(hideLoader())
@@ -40,7 +40,7 @@ export function initialApp() {
 
 export function initUserLocation(lat, lon) {
   return async dispatch => {
-    const key = 'f868ec53691a5a8ae1f3d0b5b18ce84e'
+    const key = '{Api TOKEN}'
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&lang=ru&appid=${key}`
     const userLocation = await fetch(url).then( response => { return response.json()})
     dispatch({ type: INIT_USER, payload: userLocation })
@@ -57,7 +57,7 @@ export function showModalAddLocation(content) {
 
 export function addLocation(city) {
   return async dispatch => {
-    const key = 'f868ec53691a5a8ae1f3d0b5b18ce84e'
+    const key = '{Api TOKEN}'
     const url = `https://api.openweathermap.org/data/2.5/weather?id=${city.cod}&units=metric&lang=ru&appid=${key}`
     const result = await fetch(url).then( response => { return response.json()})
     dispatch(hideModal())
@@ -72,7 +72,7 @@ export function deleteLocation(index) {
 
 export function showModalInfoLocation(location, content) {
   return async dispatch => {
-    const key = 'f868ec53691a5a8ae1f3d0b5b18ce84e'
+    const key = '{Api TOKEN}'
     const part = 'current,minutely,hourly,alerts'
     const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${location.coord.lat}&lon=${location.coord.lon}&exclude=${part}&units=metric&lang=ru&appid=${key}`
     const result = await fetch(url).then( response => { return response.json()})
