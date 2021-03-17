@@ -1,0 +1,8 @@
+.App {
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  width: 25vw;
+  height: 55vh;
+  border: 1px solid #64A8D1;
+}

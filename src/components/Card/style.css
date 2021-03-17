@@ -1,0 +1,102 @@
+.card__wrapper {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 4px 10px;
+  border: 1px solid #64A8D1;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.card__wrapper--container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardInfo__modal--loading {
+  position: absolute;
+  left: 50%;
+  top: 25%
+}
+
+.card__wrapper--title {}
+
+.card__wrapper--info {
+  display: flex;
+  align-items: center;
+}
+
+.card__wrapper--info img {
+  width: 60px;
+}
+
+.card__wrapper--delete {
+  position: absolute;
+  left: 73%;
+}
+
+.card__wrapper--delete i {
+  font-size: 29px;
+}
+
+.modal__wrpapper--infoLocation,
+.cardInfo__modal{
+  width: 100%;
+  display: flex;
+}
+
+.cardInfo__modal {
+  flex-direction: column;
+}
+
+.cardInfo__modal--title {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.cardInfo__modal--content {
+  margin: 0 7%;
+}
+
+.cardInfo__modal--content__today {}
+
+.cardInfo__modal--content__tomorrow {
+  margin-top: 20px;
+}
+
+.cardInfo__modal--content__today--title,
+.cardInfo__modal--content__tomorrow--title {
+  margin-bottom: 10px;
+}
+
+.cardInfo__modal--content__today--info img,
+.cardInfo__modal--content__tomorrow--info img {
+  width: 70px;
+}
+
+.cardInfo__modal--content__today--info,
+.cardInfo__modal--content__tomorrow--info {
+  display: flex;
+}
+
+.cardInfo__modal--content__today--info__weather,
+.cardInfo__modal--content__tomorrow--info__weather {
+  width: 35%;
+}
+
+.cardInfo__modal--content__today--info__day,
+.cardInfo__modal--content__tomorrow--info__day {
+  width: 65%;
+}
+
+.cardInfo__modal--content__today--info__day canvas,
+.cardInfo__modal--content__tomorrow--info__day canvas {
+  width: 100%;
+  height: 80%;
+}

@@ -1,0 +1,17 @@
+export const INIT = "APP/INIT"
+export const INIT_USER = "APP/INIT_USER_LOCATION"
+
+export const SHOW_LOADER = "APP/SHOW_LOADER"
+export const HIDE_LOADER = "APP/HIDE_LOADER"
+
+export const MODAL_CONTENT = "APP/SET_MODAL_CONTENT"
+export const SHOW_MODAL = "APP/SHOW_MODAL"
+export const HIDE_MODAL = "APP/HIDE_MODAL"
+
+export const ADD_LOCATION = "APP/ADD_LOCATION"
+export const DELETE_LOCATION = "APP/DELETE_LOCATION"
+
+export const FLAG_ADD = "APP/MODAL_FLAG_ADD"
+export const FLAG_GET = "APP/MODAL_FLAG_GET_INFO"
+
+export const GET_INFO_LOCATION = "APP/GET_INFO_LOCATION"
